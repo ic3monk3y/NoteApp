@@ -1,8 +1,8 @@
 const { Sequelize } = require('sequelize');
-const DB_CONN = 'localhost';
-const DB_NAME = 'notas';
-const BD_USER = 'root';
-const DB_PASS = '';
+const DB_CONN = process.env.DB_CONN;
+const DB_NAME = process.env.DB_NAME;
+const BD_USER = process.env.BD_USER;
+const DB_PASS = process.env.DB_PASS;
 
 const sequelize = new Sequelize (DB_NAME,BD_USER,DB_PASS, 
     {
