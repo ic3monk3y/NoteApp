@@ -1,8 +1,5 @@
 const { Sequelize } = require('sequelize');
-const DB_CONN = process.env.DB_CONN;
-const DB_NAME = process.env.DB_NAME;
-const BD_USER = process.env.BD_USER;
-const DB_PASS = process.env.DB_PASS;
+const {DB_CONN,DB_NAME,BD_USER,DB_PASS} = process.env;
 
 const sequelize = new Sequelize (DB_NAME,BD_USER,DB_PASS, 
     {
